@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contacto - Ivoobarber</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor barra-nav">
+            <a href="./index.html" class="logo">
+                <img src="./assets/logo.png" alt="Logo Ivoobarber" />
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Servicios</a></li>
+                    <li><a href="./contacto.html" class="activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h1>Contacto</h1>
+            <form action="" method="post">
+                <label for="nombre-apellido">Nombre y apellido</label>
+                <input type="text" id="nombre-apellido" class="input-principal" required />
+
+                <label for="correo-electronico">Correo electrónico</label>
+                <input type="email" id="correo-electronico" class="input-principal" placeholder="email@dominio.com" required />
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-principal" placeholder="(011) 2345-6789" required />
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="6" class="input-principal" required></textarea>
+
+                <fieldset>
+                    <legend>¿Cómo preferís que te contactemos?</legend>
+                    <label><input type="radio" name="contacto" value="email" id="radio-email" /> Email</label>
+                    <label><input type="radio" name="contacto" value="telefono" id="radio-telefono" /> Teléfono</label>
+                    <label><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked /> WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En qué horario preferís ser atendido?</legend>
+                    <select id="horario" name="horario">
+                        <option value="manana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked /> Quiero recibir novedades de Ivoobarber
+                </label>
+
+                <input type="submit" value="Enviar" class="boton boton-enviar" />
+            </form>
+
+            <table class="horarios">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Domingo</td>
+                        <td>Las 24 horas</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">*Servicio a domicilio, coordinado por WhatsApp</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./assets/logo-blanco.png" alt="Logo Ivoobarber en blanco" class="logo-footer" />
+        <nav class="footer-nav">
+            <a href="./index.html">Inicio</a>
+            <a href="./productos.html">Servicios</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="https://www.instagram.com/ivoob_barber/" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+        <p class="copyright">&copy; 2026 Ivoobarber. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

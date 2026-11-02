@@ -1,0 +1,385 @@
+:root {
+    --color-primario: #808080;
+    --color-oscuro: #1a1a1a;
+    --color-texto: #e0e0e0;
+    --color-fondo-suave: #262626;
+    --fuente: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--fuente);
+    color: var(--color-texto);
+    background: var(--color-oscuro);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 14px 30px;
+    background: var(--color-primario);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: filter 0.3s;
+}
+
+.boton:hover {
+    filter: brightness(1.3);
+}
+
+header {
+    background: var(--color-oscuro);
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.barra-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.activo {
+    color: var(--color-primario);
+}
+
+.hero-imagen {
+    width: 100%;
+    display: block;
+}
+
+.hero-cta {
+    text-align: center;
+    padding: 25px 0;
+    background: var(--color-fondo-suave);
+}
+
+.sobre-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.sobre-nosotros img {
+    border-radius: 8px;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+    margin-bottom: 15px;
+}
+
+.mision strong {
+    color: var(--color-primario);
+}
+
+.diferenciales {
+    background: var(--color-fondo-suave);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.diferenciales h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.diferenciales-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.lista-diferenciales {
+    list-style: none;
+    text-align: left;
+}
+
+.lista-diferenciales li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.lista-diferenciales li::before {
+    content: "★ ";
+    color: var(--color-primario);
+}
+
+.imagen-diferenciales {
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+}
+
+.sin-local {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sin-local h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.sin-local p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 1.1em;
+}
+
+.servicios {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.servicios h1 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.lista-servicios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.servicio {
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.servicio h2 {
+    font-size: 1.4em;
+    margin: 20px 0 10px;
+}
+
+.servicio p {
+    padding: 0 20px;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--color-primario);
+    margin: 15px 0 20px;
+}
+
+.portafolio {
+    padding: 60px 0;
+    text-align: center;
+    background: var(--color-fondo-suave);
+}
+
+.portafolio h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+.contacto {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.contacto h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 20px 0 8px;
+}
+
+.input-principal {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--color-fondo-suave);
+    color: var(--color-texto);
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+fieldset {
+    border: 1px solid #444;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin: 5px 15px 5px 0;
+}
+
+.checkbox {
+    display: block;
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+.boton-enviar {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.horarios th,
+.horarios td {
+    border: 1px solid #444;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.horarios thead {
+    background: var(--color-primario);
+    color: white;
+}
+
+.horarios tfoot td {
+    font-size: 0.85em;
+    color: #999;
+}
+
+footer {
+    background: var(--color-oscuro);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #333;
+}
+
+.logo-footer {
+    height: 40px;
+    margin: 0 auto 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: var(--color-primario);
+}
+
+.copyright {
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    .barra-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .sobre-nosotros,
+    .diferenciales-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-servicios {
+        grid-template-columns: 1fr;
+    }
+}
